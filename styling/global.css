@@ -20,16 +20,28 @@ body,h1,h2,h3,h4,h5,h6,p{ margin:0; color:white }
 body {
   font-family: "Hind Vadodara", sans-serif;
   width: 100%;
+  /*We want our background to be black*/
+  /*~ This will make the transparent overlay dark */
+  background: black; 
+  
 }
-
-img {
+.background {
+  display: block;
+  width: 100%; 
+}
+.background__img {
+  /*Remove background img from document flow*/
+  position: absolute;
+  top: 0;
+  z-index: -10;
+  /*~ Apply transparent filter to background img */
+  opacity: 0.3; 
+  /*~ Set your desired image width and height, then crop so we don't distort ratio*/
   width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
 ul {
   list-style-type: none; /* remove li bullets */
 }
-
-/* .a{
-  font-family: 'Permanent Marker', cursive;
-} */
