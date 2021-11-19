@@ -5,21 +5,31 @@
   --clr-brown: #383838;
   --clr-green: #50a584;
 }
+
 /*Enable border-box*/
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 /* prettier-ignore */
-body,h1,h2,h3,h4,h5,h6,p{ margin:0; color:white}
+body,h1,h2,h3,h4,h5,h6,p{ margin:0; color:white }
+
+/* Apply the site's main font */
 body {
   font-family: "Hind Vadodara", sans-serif;
+  width: 100%;
 }
+
+img {
+  width: 100%;
+}
+
 ul {
   list-style-type: none; /* remove li bullets */
 }
-/* ---------------------------------------------------------------------- */
-.a{
+
+/* .a{
   font-family: 'Permanent Marker', cursive;
-}
+} */

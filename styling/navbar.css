@@ -1,0 +1,62 @@
+.navbar {
+  height: 54px; /* navbar height consistent across all devices */
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar object {
+  height: 24px; /*~1 changes over 525px*/
+  margin-inline: 16px;
+}
+.navbar--logos--horizontal,
+.navbar--logos--vertical {
+  display: none; /* hide both navbars*/
+}
+
+.navbar--logos object {
+  margin: 0px 0px 0px 14px;
+}
+
+@media (min-width: 525px) {
+  /* Place a horizontal navbar at this point*/
+  .navbar {
+    height: 70px;
+  }
+  .navbar object {
+    height: 40px; /*~1 changes below 525px*/
+  }
+  .navbar--logos--horizontal {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    /* centering the container of logos without flexbox */
+    left: 25%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .navbar {
+    background: none; /*remove the black bar*/
+  }
+  .navbar--logos--horizontal {
+    display: none; /* hide the horizontal logo list */
+  }
+
+  /*add the vertical logo list*/
+  .navbar--logos--vertical {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 10%;
+  }
+  /*Increase the horiz margin for MC logo and burger + logos*/
+  .navbar object {
+    margin-inline: 50px;
+  }
+}
