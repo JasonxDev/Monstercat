@@ -1,0 +1,46 @@
+.album {
+  display: flex;
+  flex-direction: column;
+}
+
+.album--image {
+  margin-top: 112px;
+}
+
+.album--image {
+  display: flex;
+  justify-content: center;
+}
+.cover {
+  width: min(80%, 500px);
+}
+.album--description__div {
+  width: 96px;
+  height: 96px;
+  background-color: white;
+  border-radius: 100px;
+  text-align: center;
+  color: black;
+  display: none;
+}
+@media (min-width: 768px) {
+  .cover {
+    width: 712px;
+  }
+}
+@media (min-width: 992px) {
+  .album {
+    flex-direction: row;
+  }
+  .album--description {
+    margin-top: 112px;
+  }
+  .cover {
+    width: 408px;
+  }
+}
+@media (min-width: 1441px) {
+  .cover {
+    width: 480px;
+  }
+}

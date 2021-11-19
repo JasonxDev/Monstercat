@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styling/global.css" />
     <link rel="stylesheet" href="./styling/navbar.css" />
+    <link rel="stylesheet" href="./styling/album.css" />
     <!-- Import google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -135,27 +136,34 @@
     </nav>
     <!-- Album Image and title -->
     <section class="album">
-      <img src="/src/images/monsterman.jpg" />
-      <p><span>Monsterman</span> — Released September 7th, 2021</p>
-      <h2 class="a">ALBUM: MONSTERMAN</h2>
-      <h2>POWER ROB</h2>
-      <button>
-        <object
-          type="image/svg+xml"
-          data="src/SVG/white/buttons/playButton.svg"
-          width="18"
-          height="18"
-        ></object>
-        Listen Now</button
-      ><button>
-        <object
-          type="image/svg+xml"
-          data="src/SVG/white/buttons/shareButton.svg"
-          width="18"
-          height="18"
-        ></object>
-        Share
-      </button>
+      <div class="album--image">
+        <img class="cover" src="/src/images/monsterman.jpg" />
+      </div>
+      <div class="album--description">
+        <p><span>Monsterman</span> — Released September 7th, 2021</p>
+        <h2>MONSTERMAN</h2>
+        <h3>POWER ROB</h3>
+        <div class="album--description__div">Main</div>
+        <div class="album--description__div">Featured</div>
+        <button>
+          <object
+            type="image/svg+xml"
+            data="src/SVG/white/buttons/playButton.svg"
+            width="18"
+            height="18"
+          ></object>
+          Listen Now
+        </button>
+        <button>
+          <object
+            type="image/svg+xml"
+            data="src/SVG/white/buttons/shareButton.svg"
+            width="18"
+            height="18"
+          ></object>
+          Share
+        </button>
+      </div>
     </section>
     <!-- Table of SVG logos -->
     <h2>STREAM IT YOUR WAY</h2>
@@ -230,7 +238,7 @@
     <ul class="related">
       <li>
         <div>
-          <img src="/src/images/runaway.jpg" />
+          <img class="cover" src="/src/images/runaway.jpg" />
           <p><span>Runaway</span><br /><span>Power Rob</span></p>
         </div>
       </li>
