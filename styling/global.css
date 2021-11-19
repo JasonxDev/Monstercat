@@ -14,7 +14,7 @@
 }
 
 /* prettier-ignore */
-body,h1,h2,h3,h4,h5,h6,p{ margin:0; color:white }
+body,h1,h2,h3,h4,h5,h6,p { margin:0; color:white }
 
 /* Apply the site's main font */
 body {
@@ -22,24 +22,19 @@ body {
   width: 100%;
   /*We want our background to be black*/
   /*~ This will make the transparent overlay dark */
-  background: black; 
-  
+  background-color: black;
 }
-.background {
-  display: block;
-  width: 100%; 
-}
-.background__img {
-  /*Remove background img from document flow*/
+
+.background__image {
+  width: 100%;
+  height: 100vh;
   position: absolute;
   top: 0;
   z-index: -10;
-  /*~ Apply transparent filter to background img */
-  opacity: 0.3; 
-  /*~ Set your desired image width and height, then crop so we don't distort ratio*/
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
+  background: url("/src/images/leveldays.jpg") no-repeat center center;
+  background-size: cover;
+  filter: blur(5px);
+  opacity: 0.2;
 }
 
 ul {
