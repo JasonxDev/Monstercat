@@ -2,30 +2,55 @@
   display: flex;
   flex-direction: column;
 }
-
 .album--image {
   margin-top: 112px;
 }
-
 .album--image {
   display: flex;
   justify-content: center;
 }
+/* Album Cover shown up front */
 .cover {
   width: min(80%, 500px);
 }
+/* Album name and artist */
+.album--description h2 {
+  font-size: 22px;
+}
+.album--description h3 {
+  font-size: 16px;
+}
+
 .album--description__div {
+  /* the circles containing artist PFP's */
+  display: none; /* appears in later queries */
   width: 96px;
   height: 96px;
   background-color: white;
   border-radius: 100px;
   text-align: center;
   color: black;
-  display: none;
 }
+
+/* Album Description layout*/
+.album--description {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-inline: 10%;
+  align-items: flex-start;
+}
+
 @media (min-width: 768px) {
   .cover {
     width: 712px;
+  }
+  /* Album name and artist */
+  .album--description h2 {
+    font-size: 32px;
+  }
+  .album--description h3 {
+    font-size: 28px;
   }
 }
 @media (min-width: 992px) {
@@ -42,5 +67,12 @@
 @media (min-width: 1441px) {
   .cover {
     width: 480px;
+  }
+  /* Album name and artist */
+  .album--description h2 {
+    font-size: 48px;
+  }
+  .album--description h3 {
+    font-size: 36px;
   }
 }
