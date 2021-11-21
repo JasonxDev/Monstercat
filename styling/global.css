@@ -15,7 +15,7 @@
 
 /* prettier-ignore */
 body,h1,h2,h3,h4,h5,h6,p { margin:0; color:white }
-
+ul { padding:0; }
 /* Apply the site's main font */
 body {
   font-family: "Hind Vadodara", sans-serif;

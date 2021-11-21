@@ -1,16 +1,67 @@
 .tracklist {
   width: min(90%, 500px);
+  margin-top: 32px;
+  margin-inline: auto;
 }
 
-@media (min-width: 768px) {
+.tracklist__li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.num--play--song {
+  display: flex;
+  align-items: center;
+}
+
+.duration--share {
+  display: flex;
+  align-items: center;
+}
+
+.duration--share object {
+  margin-left: 16px;
+}
+
+.tracknum {
+  font-size: 18px;
+  margin-right: 16px;
+}
+
+.tracknum + object {
+  margin-right: 16px;
+}
+
+.descrip p:first-child {
+  font-size: 18px;
+}
+
+.descrip p:nth-child(2) {
+  font-size: 14px;
+}
+
+.duration--share > p {
+  font-size: 18px;
+}
+
+@media (min-width: 992px) {
+  .duration--share {
+    padding-right: 20%;
+  }
+  .duration--share > p {
+    width: 80px;
+  }
   .tracklist {
     width: 960px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1441px) {
   .tracklist {
-    width: 960px;
+    width: 80%;
+  }
+  .duration--share {
+    padding-right: 50%;
   }
 }
 /*# sourceMappingURL=tracklist.css.map */

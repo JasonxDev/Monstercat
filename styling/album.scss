@@ -149,11 +149,11 @@ table {
   .album {
     flex-direction: row;
     align-items: center;
-    @include width-past768;
+    @include width-past992;
     padding-top: 140px;
   }
   .stream--options {
-    @include width-past768;
+    @include width-past992;
     margin-inline: auto;
     letter-spacing: 2px;
   }
@@ -178,10 +178,10 @@ table {
 }
 @media (min-width: 1441px) {
   .album {
-    @include width-past992;
+    @include width-past1441;
   }
   .stream--options {
-    @include width-past992;
+    @include width-past1441;
   }
   .album__div--cover {
     width: 42%;

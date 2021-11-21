@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styling/global.css" />
     <link rel="stylesheet" href="./styling/navbar.css" />
     <link rel="stylesheet" href="./compiled_css/album.css" />
+    <link rel="stylesheet" href="./compiled_css/tracklist.css" />
     <!-- Import google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -225,16 +226,17 @@
     <div class="tracklist">
       <h2>TRACK LIST</h2>
       <ul class="tracklist__ul">
+        <!--# These will be dynamically rendered by a list in JS -->
         <li class="tracklist__li">
           <div class="num--play--song">
-            <p>1</p>
+            <p class="tracknum">1</p>
             <object
               type="image/svg+xml"
               data="src/SVG/white/buttons/playButton.svg"
               width="18"
               height="18"
             ></object>
-            <div>
+            <div class="descrip">
               <p>The Small Things</p>
               <p>Conro</p>
             </div>

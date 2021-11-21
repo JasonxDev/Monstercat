@@ -2,9 +2,9 @@
 @mixin width-mobile {
   width: #{"min(90%, 500px)"};
 }
-@mixin width-past768 {
+@mixin width-past992 {
   width: 960px;
 }
-@mixin width-past992 {
+@mixin width-past1441 {
   width: 80%;
 }
