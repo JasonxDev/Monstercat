@@ -161,7 +161,7 @@ table th {
     flex-direction: row;
     align-items: center;
     width: 960px;
-    padding-top: 192px;
+    padding-top: 140px;
   }
   .stream--options {
     width: 960px;
@@ -196,7 +196,7 @@ table th {
     width: 80%;
   }
   .album__div--cover {
-    width: 50%;
+    width: 42%;
   }
   /* Album name and artist */
   .album__div--description h2 {

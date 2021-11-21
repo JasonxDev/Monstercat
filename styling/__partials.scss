@@ -1,0 +1,10 @@
+// Place all the reusable code variales you need here
+@mixin width-mobile {
+  width: #{"min(90%, 500px)"};
+}
+@mixin width-past768 {
+  width: 960px;
+}
+@mixin width-past992 {
+  width: 80%;
+}

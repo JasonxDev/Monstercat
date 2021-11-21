@@ -1,10 +1,10 @@
-$reg-width: #{"min(90%, 500px)"}; // need this format for scss
+@import "./__partials";
 
 .album {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: $reg-width;
+  @include width-mobile;
   margin-inline: auto;
 }
 .album--name2 {
@@ -88,7 +88,7 @@ table {
   }
 }
 .stream--options {
-  width: $reg-width;
+  @include width-mobile;
   margin-inline: auto;
 }
 .services--player span {
@@ -149,11 +149,11 @@ table {
   .album {
     flex-direction: row;
     align-items: center;
-    width: 960px;
-    padding-top: 192px;
+    @include width-past768;
+    padding-top: 140px;
   }
   .stream--options {
-    width: 960px; // must match new .album width to be aligned
+    @include width-past768;
     margin-inline: auto;
     letter-spacing: 2px;
   }
@@ -178,13 +178,13 @@ table {
 }
 @media (min-width: 1441px) {
   .album {
-    width: 80%;
+    @include width-past992;
   }
   .stream--options {
-    width: 80%; // must match new .album width to be aligned
+    @include width-past992;
   }
   .album__div--cover {
-    width: 50%;
+    width: 42%;
   }
   /* Album name and artist */
   .album__div--description h2 {
