@@ -75,7 +75,18 @@
     font-weight: 600;
   }
 }
-
+// .services {
+//   box-sizing: content-box;
+// }
+// .services object {
+//   padding: 1px;
+//   border: 2px solid white;
+// }
+td,tr{
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}
 @media (min-width: 768px) {
   .pfp {
     display: inline-block;
@@ -129,12 +140,9 @@
   }
 }
 @media (min-width: 1441px) {
-  
   .album {
     justify-content: center;
     width: 80%;
-    // width: #{"min(80%, 1000px)"}; // need this format for scss
-
   }
   .album__div--cover {
     width: 680px;
