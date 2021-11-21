@@ -32,7 +32,6 @@
 /* Album name and artist */
 .album__div--description h2 {
   font-size: 22px;
-  margin-bottom: 16px;
   letter-spacing: 2px;
 }
 
@@ -191,10 +190,13 @@ table th {
 
 @media (min-width: 1441px) {
   .album {
-    width: 960px;
+    width: 80%;
+  }
+  .stream--options {
+    width: 80%;
   }
   .album__div--cover {
-    width: 650px;
+    width: 50%;
   }
   /* Album name and artist */
   .album__div--description h2 {
