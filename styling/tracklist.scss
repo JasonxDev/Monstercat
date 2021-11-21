@@ -1,0 +1,22 @@
+@import "./_partials";
+.tracklist{
+  @include width-mobile; // set width of the container
+}
+
+@media (min-width: 768px) {
+  .tracklist{
+    @include width-past768; // set width of the container
+  }
+}
+
+@media (min-width: 992px) {
+  .tracklist{
+    @include width-past768; // set width of the container
+  }
+}
+
+@media (min-width: 1441px) {
+  .tracklist{
+    @include width-past992; // set width of the container
+  }
+}
