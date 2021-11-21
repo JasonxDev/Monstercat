@@ -3,6 +3,7 @@ $reg-width: #{"min(90%, 500px)"}; // need this format for scss
 .album {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: $reg-width;
   margin-inline: auto;
 }
@@ -87,6 +88,10 @@ table {
     text-align: left;
   }
 }
+.stream--options {
+  width: $reg-width;
+  margin-inline: auto;
+}
 .services--player span {
   font-size: 20px;
 }
@@ -95,19 +100,28 @@ table {
   margin-bottom: 16px;
 }
 
-// @media (min-width: 440px) {
-//   table {
-//     border-collapse: collapse; // connect table lines
-//     td,
-//     th {
-//       border: 1px solid rgb(255, 255, 255);
-//       padding: 1rem;
-//       text-align: left;
-//     }
-//   }
-// }
+.services object {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 440px) {
+  .services object {
+    width: 30px;
+    height: 30px;
+  }
+}
 
 @media (min-width: 768px) {
+  table {
+    td,
+    th {
+      border: 1px solid rgb(255, 255, 255);
+      padding: 1rem;
+      text-align: left;
+    }
+  }
+  // Show the profile picture divs
   .pfp {
     display: inline-block;
   }
@@ -138,7 +152,11 @@ table {
     align-items: center;
     width: 960px;
     padding-top: 192px;
-    // background-color: rgb(93, 95, 97);
+  }
+  .stream--options {
+    width: 960px;
+    margin-inline: auto;
+    letter-spacing: 2px;
   }
   .album__div--description {
     width: 480px;
@@ -161,11 +179,11 @@ table {
 }
 @media (min-width: 1441px) {
   .album {
-    justify-content: center;
-    width: 80%;
+    width: 960px;
   }
+
   .album__div--cover {
-    width: 680px;
+    width: 650px;
   }
   /* Album name and artist */
   .album__div--description h2 {
