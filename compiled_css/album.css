@@ -1,0 +1,159 @@
+.album {
+  display: flex;
+  flex-direction: column;
+  width: min(90%, 500px);
+  margin-inline: auto;
+}
+
+.album--name2 {
+  display: none;
+}
+
+.album__div--cover {
+  margin-top: 35%;
+  margin-bottom: 32px;
+}
+
+.album__div--cover img {
+  width: 100%;
+  /* same width as .album container*/
+}
+
+.album--name {
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+.album--name span {
+  color: mediumseagreen;
+}
+
+/* Album name and artist */
+.album__div--description h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+
+.album__div--description h3 {
+  font-size: 16px;
+  margin-bottom: 24px;
+  letter-spacing: 2px;
+}
+
+/* the circles containing artist PFP's */
+.pfp {
+  display: none;
+  /* appears in later queries */
+  width: 96px;
+  height: 96px;
+  background-color: white;
+  border-radius: 100px;
+  text-align: center;
+  color: black;
+  margin-bottom: 32px;
+  margin-right: 20px;
+}
+
+/* Styling the buttons */
+.buttoncontainer {
+  display: flex;
+}
+
+.buttoncontainer button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttoncontainer span {
+  margin-left: 10px;
+  font-family: "Hind Vadodara", sans-serif;
+  font-size: 14px;
+}
+
+.buttoncontainer .buttoncontainer--listen {
+  width: 50%;
+  background-color: mediumseagreen;
+  color: white;
+  font-weight: 600;
+  padding-inline: 20px;
+  padding-block: 18px;
+}
+
+.buttoncontainer .buttoncontainer--share {
+  width: 40%;
+  margin-left: 6px;
+  background-color: rgba(255, 0, 0, 0);
+  border: 1px solid white;
+  color: white;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .pfp {
+    display: inline-block;
+  }
+  .pfp1 {
+    background: url("/src/images/conro-pfp.jpg");
+    background-size: 90px;
+  }
+  .pfp2 {
+    background: url("/src/images/nevve.jpg");
+    background-size: 90px;
+  }
+  .album__div--cover {
+    width: 100%;
+  }
+  .album__div--description h2 {
+    font-size: 32px;
+  }
+  .album__div--description h3 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 992px) {
+  .album {
+    flex-direction: row;
+    align-items: center;
+    width: 960px;
+    padding-top: 192px;
+  }
+  .album__div--description {
+    width: 480px;
+  }
+  .album--name {
+    display: none;
+  }
+  .album--name2 {
+    display: block;
+    margin-bottom: 16px;
+    font-style: italic;
+  }
+  .album--name2 span {
+    color: mediumseagreen;
+  }
+  .album__div--cover {
+    width: 408px;
+    margin: 0 48px 0 0;
+  }
+}
+
+@media (min-width: 1441px) {
+  .album {
+    justify-content: center;
+    width: 80%;
+  }
+  .album__div--cover {
+    width: 680px;
+  }
+  /* Album name and artist */
+  .album__div--description h2 {
+    font-size: 48px;
+  }
+  .album__div--description h3 {
+    font-size: 36px;
+  }
+}
+/*# sourceMappingURL=album.css.map */

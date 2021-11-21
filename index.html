@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styling/global.css" />
     <link rel="stylesheet" href="./styling/navbar.css" />
-    <link rel="stylesheet" href="./styling/album.css" />
+    <link rel="stylesheet" href="./compiled_css/album.css" />
     <!-- Import google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -138,31 +138,38 @@
     </nav>
     <!-- Album Image and title -->
     <section class="album">
-      <img class="album--cover" src="/src/images/leveldays.jpg" />
-      <div class="album--description">
-        <p><span>Instinct</span> — Released May 22, 2020</p>
+      <div class="album__div album__div--cover">
+        <!-- <p class="album--name2"><span>Instinct</span> — Released May 22, 2020</p> -->
+        <img src="/src/images/leveldays.jpg" />
+      </div>
+      <div class="album__div album__div--description">
+        <p class="album--name"><span>Instinct</span> — Released May 22, 2020</p>
         <h2>LEVEL DAYS</h2>
         <h3>CONRO</h3>
-        <div class="album--description__div">Main</div>
-        <div class="album--description__div">Featured</div>
-        <button>
-          <object
-            type="image/svg+xml"
-            data="src/SVG/white/buttons/playButton.svg"
-            width="18"
-            height="18"
-          ></object>
-          Listen Now
-        </button>
-        <button>
-          <object
-            type="image/svg+xml"
-            data="src/SVG/white/buttons/shareButton.svg"
-            width="18"
-            height="18"
-          ></object>
-          Share
-        </button>
+        <p class="album--name2"><span>Instinct</span> — Released May 22, 2020</p>
+        <div class="pfp pfp1"></div>
+        <div class="pfp pfp2"></div>
+
+        <div class="buttoncontainer">
+          <button class="buttoncontainer--listen">
+            <object
+              type="image/svg+xml"
+              data="src/SVG/white/buttons/playButton.svg"
+              width="12"
+              height="12"
+            ></object>
+            <span>LISTEN NOW</span>
+          </button>
+          <button class="buttoncontainer--share">
+            <object
+              type="image/svg+xml"
+              data="src/SVG/white/buttons/shareButton.svg"
+              width="12"
+              height="12"
+            ></object>
+            <span>SHARE</span>
+          </button>
+        </div>
       </div>
     </section>
     <!-- Table of SVG logos -->

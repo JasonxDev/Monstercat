@@ -24,6 +24,12 @@ body {
   /*~ This will make the transparent overlay dark */
   background-color: black;
 }
+/* Remove the aspects of a button that we always override anyway*/
+button {
+  border: 0;
+  padding: 0;
+}
+
 .background__image {
   /* Style the blurred background image of the album cover */
   width: 100%;
