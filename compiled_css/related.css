@@ -7,10 +7,11 @@
 
 .related > h2 {
   margin-top: 32px;
+  margin-bottom: 29px;
 }
 
 .related span {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .related__ul {
@@ -22,10 +23,41 @@
 .related__ul li {
   margin-right: 10px;
   margin-bottom: 10px;
-  flex: 1 0 150px;
+  flex: 0 0 150px;
 }
 
 .related img {
   width: 100%;
+}
+
+.related__ul p span:nth-child(1) {
+  font-weight: 600;
+}
+
+.related__ul p span:nth-child(2) {
+  font-style: italic;
+}
+
+@media (min-width: 767px) {
+  .related__ul p span:nth-child(1) {
+    letter-spacing: 2px;
+  }
+  .related__ul li {
+    margin-right: 14px;
+    margin-bottom: 14px;
+    flex: 0 0 220px;
+  }
+}
+
+@media (min-width: 992px) {
+  .related__ul li {
+    flex: 0 0 250px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .related__ul li {
+    flex: 0 0 350px;
+  }
 }
 /*# sourceMappingURL=related.css.map */
