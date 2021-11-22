@@ -1,0 +1,53 @@
+.linklist {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  & > div {
+    padding-right: 10%;
+  }
+  a {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+}
+.line1 {
+  margin-top: 120px;
+  margin-bottom: 40px;
+}
+.line2 {
+  margin-top: 40px;
+}
+.rights {
+  font-style: italic;
+  font-size: 14px;
+  margin-block: 16px;
+}
+.footer--text {
+  text-align: justify;
+  font-size: 11.5px;
+  p {
+    margin-bottom: 16px;
+  }
+}
+@media (min-width: 767px) {
+  .linklist {
+    flex-direction: row;
+  }
+  .linklist a,
+  .rights {
+    font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
+  .linklist a {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1441px) {
+  .footer--text p{
+    
+    // width: 200ch;
+  }
+}
