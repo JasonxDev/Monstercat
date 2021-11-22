@@ -105,8 +105,20 @@ table th {
   margin-inline: auto;
 }
 
+.services tr {
+  display: flex;
+  flex-direction: row;
+}
+
+.services--player {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .services--player span {
-  font-size: 20px;
+  font-size: 16px;
+  margin-left: 8px;
 }
 
 .stream {
@@ -124,14 +136,21 @@ table th {
     width: 30px;
     height: 30px;
   }
+  table td,
+  table th {
+    border: 1px solid white;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  .services--player span {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 768px) {
   table td,
   table th {
-    border: 1px solid white;
     padding: 1rem;
-    text-align: left;
   }
   .pfp {
     display: inline-block;
@@ -141,7 +160,7 @@ table th {
     background-size: 90px;
   }
   .pfp2 {
-    background: url("/src/images/nevve.jpg");
+    background: url("/src/images/nevve.jpeg");
     background-size: 90px;
   }
   .album__div--cover {

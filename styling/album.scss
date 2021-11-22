@@ -90,9 +90,22 @@ table {
   @include width-mobile;
   margin-inline: auto;
 }
-.services--player span {
-  font-size: 20px;
+
+.services tr {
+  display: flex;
+  flex-direction: row;
 }
+.services--player {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.services--player span {
+  font-size: 16px;
+  margin-left: 8px;
+}
+
 .stream {
   margin-top: 32px;
   margin-bottom: 16px;
@@ -104,19 +117,32 @@ table {
 }
 
 @media (min-width: 440px) {
+  // Increase SVG sizes
   .services object {
     width: 30px;
     height: 30px;
   }
-}
-
-@media (min-width: 768px) {
+  // Add padding to the SVG table entries
   table {
     td,
     th {
       border: 1px solid rgb(255, 255, 255);
-      padding: 1rem;
+      padding: 0.5rem;
       text-align: left;
+    }
+  }
+  // Increase MC-player font size
+  .services--player span {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  // Add padding to the SVG table entries
+  table {
+    td,
+    th {
+      padding: 1rem;
     }
   }
   // Show the profile picture divs
@@ -128,11 +154,11 @@ table {
     background-size: 90px;
   }
   .pfp2 {
-    background: url("/src/images/nevve.jpg");
+    background: url("/src/images/nevve.jpeg");
     background-size: 90px;
   }
 
-  // The image swaps sizes in a bad way
+  // The image swaps sizes 
   .album__div--cover {
     width: 100%;
   }
