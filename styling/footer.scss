@@ -31,6 +31,13 @@
     margin-bottom: 16px;
   }
 }
+.logolist2 {
+  display: flex;
+  align-items: center;
+  object {
+    margin: 4px;
+  }
+}
 @media (min-width: 767px) {
   .linklist {
     flex-direction: row;
@@ -41,13 +48,10 @@
   }
 }
 @media (min-width: 992px) {
+  .linklist {
+    flex-direction: row;
+  }
   .linklist a {
     font-size: 24px;
-  }
-}
-@media (min-width: 1441px) {
-  .footer--text p{
-    
-    // width: 200ch;
   }
 }
