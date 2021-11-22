@@ -20,6 +20,7 @@
   margin-right: 10px;
   margin-bottom: 10px;
   flex: 0 0 150px; // min width of 150px, let each entry grow evenly
+
 }
 .related img {
   width: 100%;
@@ -39,10 +40,15 @@
     margin-bottom: 14px;
     flex: 0 0 220px;
   }
+  .related__ul li p {
+    margin-top: 8px;
+  }
 }
 @media (min-width: 992px) {
   .related__ul li {
-    flex: 0 0 250px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    flex: 0 0 250px
   }
 }
 @media (min-width: 1441px) {

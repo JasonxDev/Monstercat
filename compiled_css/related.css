@@ -47,10 +47,15 @@
     margin-bottom: 14px;
     flex: 0 0 220px;
   }
+  .related__ul li p {
+    margin-top: 8px;
+  }
 }
 
 @media (min-width: 992px) {
   .related__ul li {
+    margin-right: 20px;
+    margin-bottom: 20px;
     flex: 0 0 250px;
   }
 }

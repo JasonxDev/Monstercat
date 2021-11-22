@@ -9,10 +9,9 @@
 }
 
 .linklist a {
+  letter-spacing: 2px;
   display: block;
   font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 2px;
 }
 
 .line1 {
@@ -30,12 +29,24 @@
   margin-block: 16px;
 }
 
+.rights--container {
+  display: flex;
+  flex-direction: column;
+}
+
 .footer--text {
-  text-align: justify;
-  font-size: 11.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-top: 64px;
 }
 
 .footer--text p {
+  width: 100%;
   margin-bottom: 16px;
 }
 
@@ -45,7 +56,7 @@
 }
 
 .logolist2 object {
-  margin: 4px;
+  margin-right: 10px;
 }
 
 @media (min-width: 767px) {
@@ -56,9 +67,19 @@
   .rights {
     font-size: 18px;
   }
+  .logolist2 object {
+    margin-right: 16px;
+  }
 }
 
 @media (min-width: 992px) {
+  .rights--container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer--text p {
+    width: 940px;
+  }
   .linklist {
     flex-direction: row;
   }
