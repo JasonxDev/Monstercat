@@ -1,0 +1,55 @@
+.related {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-inline: 0px;
+  & > h2 {
+    margin-top: 32px;
+  }
+  span {
+    font-size: 14px;
+  }
+}
+.related__ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.related__ul li {
+  // Min dimensions for related song li's
+  width: 150px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: crimson;
+}
+.related img {
+  width: 100%;
+}
+
+// @media (min-width: 767px) {
+//   .related img {
+//     width: 360px;
+//   }
+//   .related__ul li {
+//     width: 360px;
+//     height: 415px;
+//   }
+// }
+// @media (min-width: 992px) {
+//   .related img {
+//     width: 228px;
+//   }
+//   .related__ul li {
+//     width: 228px;
+//     height: 283px;
+//   }
+// }
+// @media (min-width: 1441px) {
+//   .related img {
+//     width: 175px;
+//   }
+//   .related__ul li {
+//     width: 175px;
+//     height: 266px;
+//   }
+// }

@@ -1,0 +1,32 @@
+.related {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-inline: 0px;
+}
+
+.related > h2 {
+  margin-top: 32px;
+}
+
+.related span {
+  font-size: 14px;
+}
+
+.related__ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.related__ul li {
+  width: 150px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background-color: crimson;
+}
+
+.related img {
+  width: 100%;
+}
+/*# sourceMappingURL=related.css.map */

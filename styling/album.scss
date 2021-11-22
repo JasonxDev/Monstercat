@@ -28,12 +28,11 @@
 /* Album name and artist */
 .album__div--description h2 {
   font-size: 22px;
-  letter-spacing: 2px;
 }
 .album__div--description h3 {
   font-size: 16px;
   margin-bottom: 24px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
 }
 /* the circles containing artist PFP's */
 .pfp {
@@ -155,7 +154,6 @@ table {
   .stream--options {
     @include width-past992;
     margin-inline: auto;
-    letter-spacing: 2px;
   }
   .album__div--description {
     width: 480px;

@@ -4,7 +4,7 @@
 }
 .tracklist {
   @include width-mobile; // set width of the container
-  margin-top:32px;
+  margin-top: 32px;
   margin-inline: auto;
 }
 .tracklist__li {
@@ -14,13 +14,11 @@
 .num--play--song {
   display: flex;
   align-items: center;
-  // width: 60%;
 }
 .duration--share {
   display: flex;
   align-items: center;
-  // justify-content: space-between; //! sus
-  // width: 40%;
+
   object {
     margin-left: 16px;
   }
@@ -45,7 +43,7 @@
 }
 
 @media (min-width: 992px) {
-  .duration--share{
+  .duration--share {
     padding-right: 20%;
   }
   .duration--share > p {
@@ -60,7 +58,7 @@
   .tracklist {
     @include width-past1441; // set width of the container
   }
-  .duration--share{
+  .duration--share {
     padding-right: 50%;
   }
 }

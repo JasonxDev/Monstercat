@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styling/navbar.css" />
     <link rel="stylesheet" href="./compiled_css/album.css" />
     <link rel="stylesheet" href="./compiled_css/tracklist.css" />
+    <link rel="stylesheet" href="./compiled_css/related.css" />
     <!-- Import google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -144,7 +145,7 @@
       </div>
       <div class="album__div album__div--description">
         <p class="album--name"><span>Instinct</span> — Released May 22, 2020</p>
-        <h2>LEVEL DAYS</h2>
+        <h2 class="category__header">LEVEL DAYS</h2>
         <h3>CONRO</h3>
         <p class="album--name2">
           <span>Instinct</span> — Released May 22, 2020
@@ -177,7 +178,7 @@
 
     <!-- Table of SVG logos -->
     <div class="stream--options">
-      <h2 class="stream">STREAM IT YOUR WAY</h2>
+      <h2 class="stream category__header">STREAM IT YOUR WAY</h2>
       <section class="services">
         <table>
           <tr>
@@ -224,7 +225,7 @@
     </div>
     <!-- List of Songs in the Album -->
     <div class="tracklist">
-      <h2>TRACK LIST</h2>
+      <h2 class="category__header">TRACK LIST</h2>
       <ul class="tracklist__ul">
         <!--# These will be dynamically rendered by a list in JS -->
         <li class="tracklist__li">
@@ -252,17 +253,56 @@
           </div>
         </li>
       </ul>
+      <!-- List of similar releases -->
+      <div class="related">
+        <h2 class="category__header">RELATED RELEASES</h2>
+        <ul class="related__ul">
+          <li>
+            <img class="cover" src="/src/images/smallthings.jpg" />
+            <p>
+              <span>THE SMALL THINGS</span><br />
+              <span>Conro</span>
+            </p>
+          </li>
+          <li>
+            <img class="cover" src="/src/images/fighters.jpg" />
+            <p>
+              <span>FIGHTERS</span><br />
+              <span>Conro</span>
+            </p>
+          </li>
+          <li>
+            <img class="cover" src="/src/images/memorybank.jpg" />
+            <p>
+              <span>MEMORY BANK</span><br />
+              <span>Dyro x Conro</span>
+            </p>
+          </li>
+          <li>
+            <img class="cover" src="/src/images/luvdrunk.jpg" />
+            <p>
+              <span>LUV(DRUNK)</span><br />
+              <span>Conro</span>
+            </p>
+          </li>
+          <li>
+            <img class="cover" src="/src/images/gottabe.jpg" />
+            <p>
+              <span>YOU GOTTA BE</span><br />
+              <span>Conro & LissA</span>
+            </p>
+          </li>
+          <li>
+            <img class="cover" src="/src/images/falling.jpeg" />
+            <p>
+              <span>FALLING FOR YOU</span><br />
+              <span>Sabai & Nevve</span>
+            </p>
+          </li>
+        </ul>
+      </div>
     </div>
-    <!-- List of similar releases -->
-    <h2>OTHER RELEASES LIKE THIS</h2>
-    <ul class="related">
-      <li>
-        <div>
-          <img class="cover" src="/src/images/runaway.jpg" />
-          <p><span>Runaway</span><br /><span>Power Rob</span></p>
-        </div>
-      </li>
-    </ul>
+
     <p>--------------------------------------------------</p>
     <!-- External Links -->
     <section>

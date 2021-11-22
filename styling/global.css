@@ -15,7 +15,9 @@
 
 /* prettier-ignore */
 body,h1,h2,h3,h4,h5,h6,p { margin:0; color:white }
-ul { padding:0; }
+ul {
+  padding: 0;
+}
 /* Apply the site's main font */
 body {
   font-family: "Hind Vadodara", sans-serif;
@@ -53,4 +55,24 @@ button {
 
 ul {
   list-style-type: none; /* remove li bullets */
+}
+
+.category__header {
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+@media (min-width: 540px) {
+  .category__header {
+    font-size: 27.5px;
+  }
+}
+@media (min-width: 775px) {
+  .category__header {
+    font-size: 35px;
+  }
+}
+@media (min-width: 1441px) {
+  .category__header {
+    font-size: 45px;
+  }
 }
