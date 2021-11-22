@@ -20,10 +20,9 @@
 }
 
 .related__ul li {
-  width: 150px;
   margin-right: 10px;
   margin-bottom: 10px;
-  background-color: crimson;
+  flex: 1 0 150px;
 }
 
 .related img {

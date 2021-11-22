@@ -17,10 +17,10 @@
 }
 .related__ul li {
   // Min dimensions for related song li's
-  width: 150px;
+  // width: 150px;
   margin-right: 10px;
   margin-bottom: 10px;
-  background-color: crimson;
+  flex: 1 0 150px;
 }
 .related img {
   width: 100%;
